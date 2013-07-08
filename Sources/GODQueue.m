@@ -104,7 +104,13 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 - (void)sync:(GODBlock)block {
     NSParameterAssert(block);
-    dispatch_sync(self.dispatchQueue, block);
+    if (self.isCurrent) {
+        block();
+    }
+    else {
+        dispatch_sync(self.dispatchQueue, block);
+    }
+    
 }
 
 
