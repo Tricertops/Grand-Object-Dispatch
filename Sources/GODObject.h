@@ -14,6 +14,16 @@ typedef dispatch_block_t GODBlock;
 
 
 
+#define GODOnceReturn(EXPRESSION)\
+    static id onceObject = nil;\
+    static dispatch_once_t onceToken;\
+    dispatch_once(&onceToken, ^{\
+        onceObject = EXPRESSION;\
+    });\
+    return onceObject;
+
+
+
 
 
 @class GODQueue;
@@ -38,21 +48,12 @@ typedef dispatch_block_t GODBlock;
 /// Resume the invocation of block objects on a dispatch object.
 - (void)resume;
 
-/// Sets the finalizer block for a dispatch object.
-- (void)setFinalizer:(GODBlock)block;
-
-
 
 
 #pragma mark Debugging Objects
 
 /// Programmatically logs debug information about a dispatch object.
 - (void)log:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
-
-
-
-
-
 
 
 
@@ -64,6 +65,9 @@ typedef dispatch_block_t GODBlock;
 
 /// Associates an application-defined context with the object.
 - (void)setContext:(void *)context;
+
+/// Sets the finalizer function for a dispatch object.
+- (void)setFinalizer:(dispatch_function_t)finalizer;
 
 /// Underlaying GCD object.
 - (dispatch_object_t)dispatchObject;
