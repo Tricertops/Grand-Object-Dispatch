@@ -32,9 +32,6 @@ typedef void (^GODApplyBlock)(size_t);
 /// Creates a new serial queue with generic name.
 - (instancetype)init;
 
-/// Returns the name specified for the queue when the queue was created. Name is the last component of reverse-DNS label.
-- (NSString *)name;
-
 /// Returns a well-known global concurrent queue of a given priority level.
 + (instancetype)highPriorityQueue;
 + (instancetype)defaultQueue;
@@ -74,14 +71,13 @@ typedef void (^GODApplyBlock)(size_t);
 
 #pragma mark Debugging Queues
 
-/// Returns the queue on which the currently executing block is running.
-+ (GODQueue *)currentQueue;
+/// Returns YES, when it block submitted to receiver queue are executed on current queue, otherwise NO. Compares queue-specific context data.
+- (BOOL)isCurrent;
 
 
 
 #pragma mark Protected Methods
 /// You should try to avoid using these methods, since this abtraction is trying to cover them. They may become private in future.
-/// Methods for managing queue-specific context data are not published, because they are used for internal purposes.
 
 /// Designated initializer.
 - (instancetype)initWithDispatchQueue:(dispatch_queue_t)dispatchQueue;
@@ -92,8 +88,14 @@ typedef void (^GODApplyBlock)(size_t);
 /// Returns the label specified for the queue when the queue was created.
 - (NSString *)label;
 
-/// Returns YES, when it block submitted to receiver queue are executed on current queue, otherwise NO. Compares queue-specific context data.
-- (BOOL)isCurrent;
+/// Returns the value for the key associated with the current dispatch queue.
++ (void *)specificForKey:(void *)key;
+
+/// Returns the value for the key associated with the specified dispatch queue.
+- (void *)specificForKey:(void *)key;
+
+///Sets the key/value data for the specified dispatch queue.
+- (void)setSpecific:(void *)specific forKey:(void *)key destructor:(dispatch_function_t)destructor;
 
 /// Executes blocks submitted to the main queue. This function never returns.
 + (void)runMain;
