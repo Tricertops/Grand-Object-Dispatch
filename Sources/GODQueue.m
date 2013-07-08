@@ -110,7 +110,6 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
     else {
         dispatch_sync(self.dispatchQueue, block);
     }
-    
 }
 
 
