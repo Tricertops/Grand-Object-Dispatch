@@ -17,6 +17,7 @@
 		5B532BAE178B06D40042DD49 /* GODObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BAD178B06D40042DD49 /* GODObject.m */; };
 		5B532BB1178B06E20042DD49 /* GODQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BB0178B06E20042DD49 /* GODQueue.m */; };
 		5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA4178C64FA0003F610 /* GODGroup.m */; };
+		5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		5B532BB0178B06E20042DD49 /* GODQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODQueue.m; sourceTree = "<group>"; };
 		5BDE8BA3178C64FA0003F610 /* GODGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODGroup.h; sourceTree = "<group>"; };
 		5BDE8BA4178C64FA0003F610 /* GODGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODGroup.m; sourceTree = "<group>"; };
+		5BDE8BA6178C71450003F610 /* GODSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODSemaphore.h; sourceTree = "<group>"; };
+		5BDE8BA7178C71450003F610 /* GODSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODSemaphore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				5B532BB0178B06E20042DD49 /* GODQueue.m */,
 				5BDE8BA3178C64FA0003F610 /* GODGroup.h */,
 				5BDE8BA4178C64FA0003F610 /* GODGroup.m */,
+				5BDE8BA6178C71450003F610 /* GODSemaphore.h */,
+				5BDE8BA7178C71450003F610 /* GODSemaphore.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				5B532BAE178B06D40042DD49 /* GODObject.m in Sources */,
 				5B532BB1178B06E20042DD49 /* GODQueue.m in Sources */,
 				5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */,
+				5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
