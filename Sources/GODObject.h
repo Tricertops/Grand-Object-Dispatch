@@ -28,7 +28,8 @@ typedef dispatch_block_t GODBlock;
 
 @class GODQueue;
 
-/// Object wrapper around dispatch_object_t. This is abstract class, you can instantinate of of subclasses: GODQueue.
+/// Object wrapper around dispatch_object_t. This is abstract class, you can instantinate of of subclasses: GODQueue, GODGroup.
+/// GCD provides dispatch object interfaces to allow your application to manage aspects of processing such as memory management, pausing and resuming execution, defining object context, and logging task data. Dispatch objects must be manually retained and released and are not garbage collected.
 @interface GODObject : NSObject
 
 

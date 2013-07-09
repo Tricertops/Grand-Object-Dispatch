@@ -17,6 +17,7 @@ typedef void (^GODApplyBlock)(size_t);
 
 
 /// Object wrapper around dispatch_queue_t.
+/// Grand Object Dispatch provides and manages FIFO queues to which your application can submit tasks in the form of block objects. Blocks submitted to queues are executed on a pool of threads fully managed by the system. No guarantee is made as to the thread on which a task executes.
 @interface GODQueue : GODObject
 
 

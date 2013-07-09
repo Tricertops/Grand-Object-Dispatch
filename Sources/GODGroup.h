@@ -15,6 +15,7 @@
 @class GODQueue;
 
 /// Object wrapper around dispatch_group_t.
+/// Grouping blocks allows for aggregate synchronization. Your application can submit multiple blocks and track when they all complete, even though they might run on different queues. This behavior can be helpful when progress can’t be made until all of the specified tasks are complete.
 @interface GODGroup : GODObject
 
 
