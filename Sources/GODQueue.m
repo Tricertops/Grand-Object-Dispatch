@@ -177,6 +177,9 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 - (instancetype)initWithDispatchQueue:(dispatch_queue_t)dispatchQueue {
     self = [super init];
     if (self) {
+        NSParameterAssert(dispatchQueue != nil);
+        if ( ! dispatchQueue) return nil;
+        
         self.dispatchQueue = dispatchQueue;
         [self setSpecific:(__bridge void *)self forKey:GODQueueSpecificKey destructor:nil];
     }
