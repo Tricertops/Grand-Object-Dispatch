@@ -54,7 +54,7 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 
 + (GODQueue *)mainQueue {
-    GODOnceReturn( [[GODQueue alloc] initWithDispatchQueue:dispatch_get_main_queue()] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_main_queue()] );
 }
 
 
@@ -71,22 +71,22 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 
 + (instancetype)highPriorityQueue {
-    GODOnceReturn( [[GODQueue alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)] );
 }
 
 
 + (instancetype)defaultQueue {
-    GODOnceReturn( [[GODQueue alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)] );
 }
 
 
 + (instancetype)lowPriorityQueue {
-    GODOnceReturn( [[GODQueue alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)] );
 }
 
 
 + (instancetype)backgroundQueue {
-    GODOnceReturn( [[GODQueue alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)] );
 }
 
 
@@ -159,12 +159,12 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@ %p; %@", self.class, self, [self.dispatchQueue debugDescription]];
+    return [NSString stringWithFormat:@"<%@ %p; %@>", self.class, self, [self.dispatchQueue debugDescription]];
 }
 
 
 - (BOOL)isCurrent {
-    return ([GODQueue specificForKey:GODQueueSpecificKey] == [self specificForKey:GODQueueSpecificKey]);
+    return ([self.class specificForKey:GODQueueSpecificKey] == [self specificForKey:GODQueueSpecificKey]);
 }
 
 
