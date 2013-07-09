@@ -14,7 +14,7 @@ Objective-C wrapper for Grand Central Dispatch with method for every single disp
 ### Implemented (or not yet)
 
   - [Dispatch Queues][1]
-  - Dispatch Groups
+  - [Dispatch Groups][2]
   - Dispatch Semaphores
   - Dispatch Sources
   - Dispatch IO
@@ -22,11 +22,12 @@ Objective-C wrapper for Grand Central Dispatch with method for every single disp
 
 
 ---
-_Version 0.1.0_
+_Version 0.2.0_
 
 MIT License, Copyright © 2013 Martin Kiss
 
 `THE SOFTWARE IS PROVIDED "AS IS", and so on...` see [`LICENSE.md`][7] for more.
 
 [1]: Sources/GODQueue.h
+[2]: Sources/GODGroup.h
 [7]: LICENSE.md
