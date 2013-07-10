@@ -130,7 +130,7 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 - (void)apply:(NSUInteger)count block:(GODApplyBlock)block {
     NSParameterAssert(block);
-    dispatch_apply((size_t)count, self.dispatchQueue, block);
+    dispatch_apply((size_t)count, self.dispatchQueue, (void(^)(size_t))block);
 }
 
 
