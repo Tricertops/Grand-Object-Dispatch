@@ -80,6 +80,12 @@
 }
 
 
+- (void)wait {
+    dispatch_group_wait(self.dispatchGroup, DISPATCH_TIME_FOREVER);
+    // No return value, because it can only succeed. Or lock forever.
+}
+
+
 - (NSInteger)waitDate:(NSDate *)date {
     return [self wait:date.timeIntervalSinceNow];
 }

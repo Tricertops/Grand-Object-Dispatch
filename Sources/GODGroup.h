@@ -44,6 +44,9 @@
 /// Waits synchronously for the previously submitted block objects to complete; returns if the blocks do not complete before the specified timeout period has elapsed.
 - (NSInteger)wait:(NSTimeInterval)timeout;
 
+/// Waits synchronously for the previously submitted block objects to complete. Waits forever.
+- (void)wait;
+
 /// Waits synchronously for the previously submitted block objects to complete; returns if the blocks do not complete before the specified date has passed.
 - (NSInteger)waitDate:(NSDate *)date;
 
