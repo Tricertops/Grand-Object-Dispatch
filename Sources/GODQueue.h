@@ -10,7 +10,7 @@
 
 
 
-typedef void (^GODApplyBlock)(size_t);
+typedef void (^GODApplyBlock)(NSUInteger index);
 
 
 
