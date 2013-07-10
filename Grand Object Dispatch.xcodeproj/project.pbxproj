@@ -18,6 +18,8 @@
 		5B532BB1178B06E20042DD49 /* GODQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BB0178B06E20042DD49 /* GODQueue.m */; };
 		5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA4178C64FA0003F610 /* GODGroup.m */; };
 		5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
+		5BDE8BAE178D478E0003F610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B80178B056E0042DD49 /* Foundation.framework */; };
+		5BDE8BB1178D478E0003F610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BB0178D478E0003F610 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BDE8BAB178D478E0003F610 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +72,8 @@
 		5BDE8BA4178C64FA0003F610 /* GODGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODGroup.m; sourceTree = "<group>"; };
 		5BDE8BA6178C71450003F610 /* GODSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODSemaphore.h; sourceTree = "<group>"; };
 		5BDE8BA7178C71450003F610 /* GODSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODSemaphore.m; sourceTree = "<group>"; };
+		5BDE8BAD178D478E0003F610 /* Benchmarking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Benchmarking; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE8BB0178D478E0003F610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BDE8BAA178D478E0003F610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE8BAE178D478E0003F610 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +112,7 @@
 			children = (
 				5B532BA8178B06390042DD49 /* Sources */,
 				5B532B97178B056F0042DD49 /* Tests */,
+				5BDE8BAF178D478E0003F610 /* Benchmarking */,
 				5B532B7F178B056E0042DD49 /* Frameworks */,
 				5B532B7E178B056E0042DD49 /* Products */,
 			);
@@ -101,6 +123,7 @@
 			children = (
 				5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */,
 				5B532B8E178B056F0042DD49 /* Grand Object DispatchTests.octest */,
+				5BDE8BAD178D478E0003F610 /* Benchmarking */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +173,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		5BDE8BAF178D478E0003F610 /* Benchmarking */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE8BB0178D478E0003F610 /* main.m */,
+			);
+			path = Benchmarking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +220,23 @@
 			productReference = 5B532B8E178B056F0042DD49 /* Grand Object DispatchTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		5BDE8BAC178D478E0003F610 /* Benchmarking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE8BB6178D478E0003F610 /* Build configuration list for PBXNativeTarget "Benchmarking" */;
+			buildPhases = (
+				5BDE8BA9178D478E0003F610 /* Sources */,
+				5BDE8BAA178D478E0003F610 /* Frameworks */,
+				5BDE8BAB178D478E0003F610 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Benchmarking;
+			productName = Benchmarking;
+			productReference = 5BDE8BAD178D478E0003F610 /* Benchmarking */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +260,7 @@
 			targets = (
 				5B532B7C178B056E0042DD49 /* Grand Object Dispatch */,
 				5B532B8D178B056F0042DD49 /* GOD Tests */,
+				5BDE8BAC178D478E0003F610 /* Benchmarking */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B532B9F178B056F0042DD49 /* Grand_Object_DispatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE8BA9178D478E0003F610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE8BB1178D478E0003F610 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +445,31 @@
 			};
 			name = Release;
 		};
+		5BDE8BB7178D478E0003F610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BDE8BB8178D478E0003F610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +499,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5BDE8BB6178D478E0003F610 /* Build configuration list for PBXNativeTarget "Benchmarking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE8BB7178D478E0003F610 /* Debug */,
+				5BDE8BB8178D478E0003F610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
