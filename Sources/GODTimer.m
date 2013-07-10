@@ -50,6 +50,12 @@
 }
 
 
+
+
+
+#pragma mark Handling Timer
+
+
 - (void)setEventTimerHandler:(GODTimerHandler)block {
     __weak typeof(self) weakSelf = self;
     [self setEventHandler:^{
@@ -58,6 +64,9 @@
         block(fireCount);
     }];
 }
+
+
+
 
 
 @end
