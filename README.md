@@ -76,13 +76,13 @@ dispatch_barrier_async(clusterQueue, ^{
       - [Dispatch Queues][1]
       - [Dispatch Groups][2]
       - [Dispatch Semaphores][3]
-      - Dispatch Sources
+      - [Dispatch Sources][4]
       - Dispatch IO
       - Dispatch Data
 
 
 ---
-_Version 0.3.0_
+_Version 0.4.0_
 
 MIT License, Copyright © 2013 Martin Kiss
 
@@ -92,4 +92,5 @@ MIT License, Copyright © 2013 Martin Kiss
 [1]: Sources/GODQueue.h
 [2]: Sources/GODGroup.h
 [3]: Sources/GODSemaphore.h
+[4]: Sources/GODSource.h
 [7]: LICENSE.md
