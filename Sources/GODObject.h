@@ -56,6 +56,11 @@ typedef dispatch_block_t GODBlock;
 /// Programmatically logs debug information about a dispatch object.
 - (void)log:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
+#ifdef DEBUG
+/// Measures average execution time of the block using many invocations.
++ (NSTimeInterval)benchmark:(NSUInteger)count block:(GODBlock)block;
+#endif
+
 
 
 #pragma mark Protected Methods

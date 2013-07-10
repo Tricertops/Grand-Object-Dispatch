@@ -11,6 +11,12 @@
 
 
 
+#ifdef DEBUG
+uint64_t dispatch_benchmark(size_t count, void (^block)(void));
+#endif
+
+
+
 
 
 @implementation GODObject
@@ -66,6 +72,15 @@
     
     NSLog(@"%@: %@", [self.dispatchObject debugDescription], message);
 }
+
+
+#ifdef DEBUG
++ (NSTimeInterval)benchmark:(NSUInteger)count block:(GODBlock)block {
+    NSParameterAssert(block);
+    NSParameterAssert(count > 0);
+    return dispatch_benchmark(count, block) * 1.0 / NSEC_PER_SEC;
+}
+#endif
 
 
 
