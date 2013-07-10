@@ -24,6 +24,7 @@
 		5BDE8BBA178D4A130003F610 /* GODQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BB0178B06E20042DD49 /* GODQueue.m */; };
 		5BDE8BBB178D4A130003F610 /* GODGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA4178C64FA0003F610 /* GODGroup.m */; };
 		5BDE8BBC178D4A130003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
+		5BED0249178DBEBE00AD24FF /* GODSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0248178DBEBD00AD24FF /* GODSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		5BDE8BA7178C71450003F610 /* GODSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODSemaphore.m; sourceTree = "<group>"; };
 		5BDE8BAD178D478E0003F610 /* Benchmarking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Benchmarking; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDE8BB0178D478E0003F610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BED0247178DBEBD00AD24FF /* GODSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODSource.h; sourceTree = "<group>"; };
+		5BED0248178DBEBD00AD24FF /* GODSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				5BDE8BA4178C64FA0003F610 /* GODGroup.m */,
 				5BDE8BA6178C71450003F610 /* GODSemaphore.h */,
 				5BDE8BA7178C71450003F610 /* GODSemaphore.m */,
+				5BED0247178DBEBD00AD24FF /* GODSource.h */,
+				5BED0248178DBEBD00AD24FF /* GODSource.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				5B532BB1178B06E20042DD49 /* GODQueue.m in Sources */,
 				5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */,
 				5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */,
+				5BED0249178DBEBE00AD24FF /* GODSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +521,7 @@
 				5BDE8BB8178D478E0003F610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
