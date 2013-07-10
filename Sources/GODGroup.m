@@ -36,6 +36,17 @@
 
 
 
+#pragma mark Superclass Overrides
+
+
+- (dispatch_object_t)dispatchObject {
+    return self.dispatchGroup;
+}
+
+
+
+
+
 #pragma mark Creating Groups
 
 
