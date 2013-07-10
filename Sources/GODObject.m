@@ -8,6 +8,7 @@
 
 #import "GODObject.h"
 #import "GODQueue.h"
+#import "GODSource.h"
 
 
 
@@ -41,8 +42,7 @@ uint64_t dispatch_benchmark(size_t count, void (^block)(void));
 
 
 - (void)suspend {
-    //TODO: Include GODSource
-    NSAssert(self.class == GODQueue.class, @"You cannot suspend other types of dispatch objects than Queues.");
+    NSAssert(self.class == GODQueue.class || self.class == GODSource.class, @"You cannot suspend other types of dispatch objects than Queues or Sources.");
     dispatch_suspend(self.dispatchObject);
 }
 
