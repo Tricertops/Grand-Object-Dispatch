@@ -34,7 +34,7 @@ typedef dispatch_block_t GODBlock;
 
 
 
-#pragma mark Creating and Managing Queues
+#pragma mark Managing Queues
 
 /// Sets the target queue for the given object.
 - (void)setTargetQueue:(GODQueue *)queue;

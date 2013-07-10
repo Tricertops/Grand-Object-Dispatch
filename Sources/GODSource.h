@@ -22,8 +22,8 @@ typedef enum GODSourceType : NSInteger {
     GODSourceTypeProcess,
     
     GODSourceTypeRead,
-    GODSourceTypeVNode,
     GODSourceTypeWrite,
+    GODSourceTypeVNode,
     
     GODSourceTypeTimer,
 } GODSourceType;
@@ -32,13 +32,18 @@ typedef enum GODSourceType : NSInteger {
 
 
 
+@class GODQueue;
+
 /// Wrapper for dispatch_semaphore_t.
 /// A suite of sources—interfaces for monitoring (low-level system objects such as Unix descriptors, Mach ports, Unix signals, VFS nodes, and so forth) for activity, and submitting event handlers to dispatch queues when such activity occurs. When an event occurs, the dispatch source submits your task code asynchronously to the specified dispatch queue for processing.
 @interface GODSource : GODObject
 
 
 
-#pragma mark Cancelling Sources
+#pragma mark Managing Sources
+
+/// Dispatch sources are created in a suspended state. After creating the source and setting any desired attributes (for example, the handler or the context), your application must call -start or -resume to begin event delivery.
+- (void)start;
 
 /// Asynchronously cancels the dispatch source, preventing any further invocation of its event handler block.
 - (void)cancel;
@@ -54,7 +59,7 @@ typedef enum GODSourceType : NSInteger {
 - (void)setRegistrationHandler:(GODBlock)block;
 
 /// Sets the cancellation handler block for the given dispatch source.
-- (void)setCancellationHandler:(GODBlock)block;
+- (void)setCancelHandler:(GODBlock)block;
 
 /// Sets the event handler block for the given dispatch source.
 - (void)setEventHandler:(GODBlock)block;
