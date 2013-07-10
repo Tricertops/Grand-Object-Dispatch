@@ -11,6 +11,64 @@ Objective-C wrapper for Grand Central Dispatch with method for every single disp
   - Method `-log:` which is replacement for deprecated `dispacth_debug`.
   - Better macro for `dispatch_once`.
 
+## Example Code
+
+### Grand Object Dispatch
+
+```
+GODQueue *clusterQueue = [[GODQueue alloc] initWithName:@"cluster" concurrent:YES];
+GODQueue *isolationQueue = [[GODQueue alloc] initWithName:@"isolation" concurrent:YES];
+
+[clusterQueue apply:100 block:^(NSUInteger index) {
+    [isolationQueue sync:^{
+        // access shared resource
+    }];
+    
+    // iterative calculation
+    
+    [isolationQueue barrierAsync:^{
+        // modify shared resource
+    }];
+}];
+
+[clusterQueue barrierAsync:^{
+    
+    // finalize data
+    
+    [[GODQueue mainQueue] async:^{
+        // update UI
+    }];
+}];
+```
+
+### Grand Central Dispatch
+
+```
+dispatch_queue_t clusterQueue = dispatch_queue_create("cluster", DISPATCH_QUEUE_CONCURRENT);
+dispatch_queue_t isolationQueue = dispatch_queue_create("isolation", DISPATCH_QUEUE_CONCURRENT);
+
+dispatch_apply(100, clusterQueue, ^(size_t index) {
+    dispatch_sync(isolationQueue, ^{
+        // access shared resource
+    });
+    
+    // iterative calculation
+    
+    dispatch_barrier_async(isolationQueue, ^{
+        // modify shared resource
+    });
+});
+
+dispatch_barrier_async(clusterQueue, ^{
+    
+    // finalize data
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // update UI
+    });
+});
+```
+
 ### Implemented (or not yet)
 
   - [Dispatch Objects][0]
