@@ -26,6 +26,8 @@
 		5BDE8BBC178D4A130003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
 		5BED0249178DBEBE00AD24FF /* GODSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0248178DBEBD00AD24FF /* GODSource.m */; };
 		5BED024A178DD15200AD24FF /* GODSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0248178DBEBD00AD24FF /* GODSource.m */; };
+		5BED0251178DD32000AD24FF /* GODTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0250178DD32000AD24FF /* GODTimer.m */; };
+		5BED0252178DD32000AD24FF /* GODTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0250178DD32000AD24FF /* GODTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		5BDE8BB0178D478E0003F610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BED0247178DBEBD00AD24FF /* GODSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODSource.h; sourceTree = "<group>"; };
 		5BED0248178DBEBD00AD24FF /* GODSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODSource.m; sourceTree = "<group>"; };
+		5BED024F178DD32000AD24FF /* GODTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODTimer.h; sourceTree = "<group>"; };
+		5BED0250178DD32000AD24FF /* GODTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 				5BDE8BA7178C71450003F610 /* GODSemaphore.m */,
 				5BED0247178DBEBD00AD24FF /* GODSource.h */,
 				5BED0248178DBEBD00AD24FF /* GODSource.m */,
+				5BED024F178DD32000AD24FF /* GODTimer.h */,
+				5BED0250178DD32000AD24FF /* GODTimer.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */,
 				5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */,
 				5BED0249178DBEBE00AD24FF /* GODSource.m in Sources */,
+				5BED0251178DD32000AD24FF /* GODTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +340,7 @@
 				5BDE8BBB178D4A130003F610 /* GODGroup.m in Sources */,
 				5BDE8BBC178D4A130003F610 /* GODSemaphore.m in Sources */,
 				5BED024A178DD15200AD24FF /* GODSource.m in Sources */,
+				5BED0252178DD32000AD24FF /* GODTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
