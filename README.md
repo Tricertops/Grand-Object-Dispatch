@@ -1,6 +1,9 @@
 # Grand Object Dispatch
 
-Objective-C wrapper for Grand Central Dispatch with method for every single dispatch call and with some useful additions.
+**Objective-C wrapper for Grand Central Dispatch** with method for every single dispatch call and with some useful additions.
+
+_Contribution in form of Pull Requests, Feature Requests or Issues is welcome! Especially suggesing improved API for **Dispatch Sources**, **Dispatch IO** and **Dispatch Data** would be really appreciated._
+
 
 ## Additions
 
