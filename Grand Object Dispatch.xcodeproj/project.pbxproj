@@ -20,6 +20,10 @@
 		5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
 		5BDE8BAE178D478E0003F610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B80178B056E0042DD49 /* Foundation.framework */; };
 		5BDE8BB1178D478E0003F610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BB0178D478E0003F610 /* main.m */; };
+		5BDE8BB9178D4A130003F610 /* GODObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BAD178B06D40042DD49 /* GODObject.m */; };
+		5BDE8BBA178D4A130003F610 /* GODQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BB0178B06E20042DD49 /* GODQueue.m */; };
+		5BDE8BBB178D4A130003F610 /* GODGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA4178C64FA0003F610 /* GODGroup.m */; };
+		5BDE8BBC178D4A130003F610 /* GODSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA7178C71450003F610 /* GODSemaphore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -317,6 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDE8BB1178D478E0003F610 /* main.m in Sources */,
+				5BDE8BB9178D4A130003F610 /* GODObject.m in Sources */,
+				5BDE8BBA178D4A130003F610 /* GODQueue.m in Sources */,
+				5BDE8BBB178D4A130003F610 /* GODGroup.m in Sources */,
+				5BDE8BBC178D4A130003F610 /* GODSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
