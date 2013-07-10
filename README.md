@@ -6,16 +6,17 @@ Objective-C wrapper for Grand Central Dispatch with method for every single disp
 
   - **Detection of _Current Queue_** using `dispatch_get_specific`.
   - **Deadlock-safe** `-sync:` method.
-  - Convenience initializer for reverse-DNS label.
-  - Accessors for _Main Queue_ and _Global Concurrent Queues_.
-  - Method `-log:` which is replacement for deprecated `dispacth_debug`.
-  - Better macro for `dispatch_once`.
+  - Convenience **initializer** for reverse-DNS label.
+  - **Accessors** for _Main Queue_ and _Global Concurrent Queues_.
+  - Method `-log:` which is **replacement for deprecated** `dispacth_debug`.
+  - **Better macro** for `dispatch_once`.
+  - Waiting methods for _Semaphores_ and _Groups_ taking **time interval** or **date** or **waiting forever**.
 
 ## Example Code
 
 ### Grand Object Dispatch
 
-```
+```objc
 GODQueue *clusterQueue = [[GODQueue alloc] initWithName:@"cluster" concurrent:YES];
 GODQueue *isolationQueue = [[GODQueue alloc] initWithName:@"isolation" concurrent:YES];
 
@@ -43,7 +44,7 @@ GODQueue *isolationQueue = [[GODQueue alloc] initWithName:@"isolation" concurren
 
 ### Grand Central Dispatch
 
-```
+```c
 dispatch_queue_t clusterQueue = dispatch_queue_create("cluster", DISPATCH_QUEUE_CONCURRENT);
 dispatch_queue_t isolationQueue = dispatch_queue_create("isolation", DISPATCH_QUEUE_CONCURRENT);
 
