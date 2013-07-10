@@ -11,6 +11,7 @@ Objective-C wrapper for Grand Central Dispatch with method for every single disp
   - Method `-log:` which is **replacement for deprecated** `dispacth_debug`.
   - **Better macro** for `dispatch_once`.
   - Waiting methods for _Semaphores_ and _Groups_ taking **time interval** or **date** or **waiting forever**.
+  - Specific class for **Dispatch Timer** (_Dispatch Source_ of type _Timer_).
 
 ## Example Code
 
@@ -77,12 +78,13 @@ dispatch_barrier_async(clusterQueue, ^{
       - [Dispatch Groups][2]
       - [Dispatch Semaphores][3]
       - [Dispatch Sources][4]
+        - [Dispatch Timer][5]
       - Dispatch IO
       - Dispatch Data
 
 
 ---
-_Version 0.4.0_
+_Version 0.5.0_
 
 MIT License, Copyright © 2013 Martin Kiss
 
@@ -93,4 +95,5 @@ MIT License, Copyright © 2013 Martin Kiss
 [2]: Sources/GODGroup.h
 [3]: Sources/GODSemaphore.h
 [4]: Sources/GODSource.h
+[5]: Sources/GODTimer.h
 [7]: LICENSE.md
