@@ -11,7 +11,7 @@ _Contribution in form of Pull Requests, Feature Requests or Issues is welcome! E
   - **Deadlock-safe** `-sync:` method.
   - Convenience **initializer** for reverse-DNS label.
   - **Accessors** for _Main Queue_ and _Global Concurrent Queues_.
-  - Method `-log:` which is **replacement for deprecated** `dispacth_debug`.
+  - Method `-log:` which is **replacement for deprecated** `dispatch_debug`.
   - **Better macro** for `dispatch_once`.
   - Waiting methods for _Semaphores_ and _Groups_ taking **time interval** or **date** or **waiting forever**.
   - Specific class for **Dispatch Timer** (_Dispatch Source_ of type _Timer_).
