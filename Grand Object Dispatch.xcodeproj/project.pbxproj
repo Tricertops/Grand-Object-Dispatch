@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B532B81178B056E0042DD49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B80178B056E0042DD49 /* Foundation.framework */; };
-		5B532B90178B056F0042DD49 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B8F178B056F0042DD49 /* SenTestingKit.framework */; };
-		5B532B92178B056F0042DD49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B91178B056F0042DD49 /* UIKit.framework */; };
-		5B532B93178B056F0042DD49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B80178B056E0042DD49 /* Foundation.framework */; };
-		5B532B96178B056F0042DD49 /* libGrand Object Dispatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */; };
-		5B532B9C178B056F0042DD49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B532B9A178B056F0042DD49 /* InfoPlist.strings */; };
-		5B532B9F178B056F0042DD49 /* Grand_Object_DispatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532B9E178B056F0042DD49 /* Grand_Object_DispatchTests.m */; };
 		5B532BAE178B06D40042DD49 /* GODObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BAD178B06D40042DD49 /* GODObject.m */; };
 		5B532BB1178B06E20042DD49 /* GODQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B532BB0178B06E20042DD49 /* GODQueue.m */; };
 		5BDE8BA5178C64FA0003F610 /* GODGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE8BA4178C64FA0003F610 /* GODGroup.m */; };
@@ -29,16 +23,6 @@
 		5BED0251178DD32000AD24FF /* GODTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0250178DD32000AD24FF /* GODTimer.m */; };
 		5BED0252178DD32000AD24FF /* GODTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED0250178DD32000AD24FF /* GODTimer.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B532B94178B056F0042DD49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B532B75178B056E0042DD49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B532B7C178B056E0042DD49;
-			remoteInfo = "Grand Object Dispatch";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5B532B7B178B056E0042DD49 /* CopyFiles */ = {
@@ -64,13 +48,8 @@
 /* Begin PBXFileReference section */
 		5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGrand Object Dispatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B532B80178B056E0042DD49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5B532B8E178B056F0042DD49 /* GOD Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOD Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B532B8F178B056F0042DD49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B532B91178B056F0042DD49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5B532B99178B056F0042DD49 /* Grand Object DispatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Grand Object DispatchTests-Info.plist"; sourceTree = "<group>"; };
-		5B532B9B178B056F0042DD49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5B532B9D178B056F0042DD49 /* Grand_Object_DispatchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grand_Object_DispatchTests.h; sourceTree = "<group>"; };
-		5B532B9E178B056F0042DD49 /* Grand_Object_DispatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grand_Object_DispatchTests.m; sourceTree = "<group>"; };
 		5B532BA9178B06390042DD49 /* GrandObjectDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrandObjectDispatch.h; sourceTree = "<group>"; };
 		5B532BAC178B06D40042DD49 /* GODObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GODObject.h; sourceTree = "<group>"; };
 		5B532BAD178B06D40042DD49 /* GODObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GODObject.m; sourceTree = "<group>"; };
@@ -97,17 +76,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B532B8A178B056F0042DD49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B532B90178B056F0042DD49 /* SenTestingKit.framework in Frameworks */,
-				5B532B92178B056F0042DD49 /* UIKit.framework in Frameworks */,
-				5B532B93178B056F0042DD49 /* Foundation.framework in Frameworks */,
-				5B532B96178B056F0042DD49 /* libGrand Object Dispatch.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5BDE8BAA178D478E0003F610 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				5B532BA8178B06390042DD49 /* Sources */,
-				5B532B97178B056F0042DD49 /* Tests */,
 				5BDE8BAF178D478E0003F610 /* Benchmarking */,
 				5B532B7F178B056E0042DD49 /* Frameworks */,
 				5B532B7E178B056E0042DD49 /* Products */,
@@ -134,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */,
-				5B532B8E178B056F0042DD49 /* GOD Tests.octest */,
 				5BDE8BAD178D478E0003F610 /* Benchmarking */,
 			);
 			name = Products;
@@ -148,25 +114,6 @@
 				5B532B91178B056F0042DD49 /* UIKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5B532B97178B056F0042DD49 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5B532B9D178B056F0042DD49 /* Grand_Object_DispatchTests.h */,
-				5B532B9E178B056F0042DD49 /* Grand_Object_DispatchTests.m */,
-				5B532B98178B056F0042DD49 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		5B532B98178B056F0042DD49 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B532B99178B056F0042DD49 /* Grand Object DispatchTests-Info.plist */,
-				5B532B9A178B056F0042DD49 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5B532BA8178B06390042DD49 /* Sources */ = {
@@ -217,25 +164,6 @@
 			productReference = 5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5B532B8D178B056F0042DD49 /* GOD Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B532BA5178B056F0042DD49 /* Build configuration list for PBXNativeTarget "GOD Tests" */;
-			buildPhases = (
-				5B532B89178B056F0042DD49 /* Sources */,
-				5B532B8A178B056F0042DD49 /* Frameworks */,
-				5B532B8B178B056F0042DD49 /* Resources */,
-				5B532B8C178B056F0042DD49 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B532B95178B056F0042DD49 /* PBXTargetDependency */,
-			);
-			name = "GOD Tests";
-			productName = "Grand Object DispatchTests";
-			productReference = 5B532B8E178B056F0042DD49 /* GOD Tests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 		5BDE8BAC178D478E0003F610 /* Benchmarking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDE8BB6178D478E0003F610 /* Build configuration list for PBXNativeTarget "Benchmarking" */;
@@ -276,38 +204,10 @@
 			projectRoot = "";
 			targets = (
 				5B532B7C178B056E0042DD49 /* Grand Object Dispatch */,
-				5B532B8D178B056F0042DD49 /* GOD Tests */,
 				5BDE8BAC178D478E0003F610 /* Benchmarking */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		5B532B8B178B056F0042DD49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B532B9C178B056F0042DD49 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5B532B8C178B056F0042DD49 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B532B79178B056E0042DD49 /* Sources */ = {
@@ -320,14 +220,6 @@
 				5BDE8BA8178C71450003F610 /* GODSemaphore.m in Sources */,
 				5BED0249178DBEBE00AD24FF /* GODSource.m in Sources */,
 				5BED0251178DD32000AD24FF /* GODTimer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B532B89178B056F0042DD49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B532B9F178B056F0042DD49 /* Grand_Object_DispatchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,25 +238,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B532B95178B056F0042DD49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B532B7C178B056E0042DD49 /* Grand Object Dispatch */;
-			targetProxy = 5B532B94178B056F0042DD49 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5B532B9A178B056F0042DD49 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B532B9B178B056F0042DD49 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5B532BA0178B056F0042DD49 /* Debug */ = {
@@ -440,36 +313,6 @@
 			};
 			name = Release;
 		};
-		5B532BA6178B056F0042DD49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Grand Object Dispatch/Grand Object Dispatch-Prefix.pch";
-				INFOPLIST_FILE = "Grand Object DispatchTests/Grand Object DispatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5B532BA7178B056F0042DD49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Grand Object Dispatch/Grand Object Dispatch-Prefix.pch";
-				INFOPLIST_FILE = "Grand Object DispatchTests/Grand Object DispatchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		5BDE8BB7178D478E0003F610 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,15 +353,6 @@
 			buildConfigurations = (
 				5B532BA3178B056F0042DD49 /* Debug */,
 				5B532BA4178B056F0042DD49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B532BA5178B056F0042DD49 /* Build configuration list for PBXNativeTarget "GOD Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B532BA6178B056F0042DD49 /* Debug */,
-				5B532BA7178B056F0042DD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

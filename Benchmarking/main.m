@@ -46,7 +46,7 @@ void godb_linear(NSUInteger count) {
 }
 
 void godb_parallel(NSUInteger count) {
-    GODQueue *queue = [[GODQueue alloc] initWithName:@"com.MartinKiss.GrandObjectDispatch.benchmarkQueue.parallel" concurrent:YES];
+    GODQueue *queue = [[GODQueue alloc] initWithName:@"BenchmarkQueue.parallel" concurrent:YES];
     [queue apply:count block:^(NSUInteger index) {
         godb_iteration(index);
     }];
@@ -54,7 +54,7 @@ void godb_parallel(NSUInteger count) {
 }
 
 void godb_serial(NSUInteger count) {
-    GODQueue *queue = [[GODQueue alloc] initWithName:@"com.MartinKiss.GrandObjectDispatch.benchmarkQueue.serial" concurrent:NO];
+    GODQueue *queue = [[GODQueue alloc] initWithName:@"BenchmarkQueue.serial" concurrent:NO];
     [queue apply:count block:^(NSUInteger index) {
         godb_iteration(index);
     }];
