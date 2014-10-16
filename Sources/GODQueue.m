@@ -70,23 +70,33 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 }
 
 
-+ (instancetype)highPriorityQueue {
-    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)] );
++ (instancetype)userQueue {
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)] );
 }
 
 
-+ (instancetype)defaultQueue {
-    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)] );
-}
-
-
-+ (instancetype)lowPriorityQueue {
-    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)] );
++ (instancetype)utilityQueue {
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(QOS_CLASS_UTILITY, 0)] );
 }
 
 
 + (instancetype)backgroundQueue {
-    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)] );
+    GODOnceReturn( [[self alloc] initWithDispatchQueue:dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)] );
+}
+
+
++ (instancetype)highPriorityQueue {
+    return [self userQueue];
+}
+
+
++ (instancetype)defaultQueue {
+    return [self utilityQueue];
+}
+
+
++ (instancetype)lowPriorityQueue {
+    return [self backgroundQueue];
 }
 
 

@@ -34,10 +34,13 @@ typedef void (^GODApplyBlock)(NSUInteger index);
 - (instancetype)init;
 
 /// Returns a well-known global concurrent queue of a given priority level.
-+ (instancetype)highPriorityQueue;
-+ (instancetype)defaultQueue;
-+ (instancetype)lowPriorityQueue;
++ (instancetype)userQueue;
++ (instancetype)utilityQueue;
 + (instancetype)backgroundQueue;
+
++ (instancetype)highPriorityQueue __deprecated_msg("Use +userQueue");
++ (instancetype)defaultQueue __deprecated_msg("Use +utilityQueue");
++ (instancetype)lowPriorityQueue __deprecated_msg("Use +utilityQueue or +backgroundQueue");
 
 
 
