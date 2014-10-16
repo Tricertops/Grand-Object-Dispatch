@@ -30,6 +30,9 @@ typedef void (^GODApplyBlock)(NSUInteger index);
 /// Creates a new queue. Name will be appended to application's identifier to create reverse-DNS label.
 - (instancetype)initWithName:(NSString *)name concurrent:(BOOL)isConcurrent;
 
+/// Creates a new queue targeted to other queue. Name will be appended to application's identifier to create reverse-DNS label.
++ (instancetype)queueWithName:(NSString *)name concurrent:(BOOL)isConcurrent target:(GODQueue *)target;
+
 /// Creates a new serial queue with generic name.
 - (instancetype)init;
 
@@ -41,6 +44,9 @@ typedef void (^GODApplyBlock)(NSUInteger index);
 + (instancetype)highPriorityQueue __deprecated_msg("Use +userQueue");
 + (instancetype)defaultQueue __deprecated_msg("Use +utilityQueue");
 + (instancetype)lowPriorityQueue __deprecated_msg("Use +utilityQueue or +backgroundQueue");
+
+/// Shortcut for creating serial queues from existing queues.
+- (GODQueue *)createSerialQueueWithName:(NSString *)name;
 
 
 

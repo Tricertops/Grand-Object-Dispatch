@@ -65,6 +65,13 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 }
 
 
++ (instancetype)queueWithName:(NSString *)name concurrent:(BOOL)isConcurrent target:(GODQueue *)target {
+    GODQueue *queue = [[self alloc] initWithName:name concurrent:isConcurrent];
+    [queue setTargetQueue:target];
+    return queue;
+}
+
+
 - (instancetype)init {
     return [self initWithName:nil concurrent:NO];
 }
@@ -97,6 +104,13 @@ static void * GODQueueSpecificKey = &GODQueueSpecificKey;
 
 + (instancetype)lowPriorityQueue {
     return [self backgroundQueue];
+}
+
+
+- (GODQueue *)createSerialQueueWithName:(NSString *)name {
+    GODQueue *queue = [[GODQueue alloc] initWithName:name concurrent:NO];
+    [queue setTargetQueue:self];
+    return queue;
 }
 
 
