@@ -64,7 +64,7 @@
 /* Begin PBXFileReference section */
 		5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGrand Object Dispatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B532B80178B056E0042DD49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5B532B8E178B056F0042DD49 /* Grand Object DispatchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Grand Object DispatchTests.octest"; path = "GOD Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B532B8E178B056F0042DD49 /* GOD Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOD Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B532B8F178B056F0042DD49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B532B91178B056F0042DD49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B532B99178B056F0042DD49 /* Grand Object DispatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Grand Object DispatchTests-Info.plist"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5B532B7D178B056E0042DD49 /* libGrand Object Dispatch.a */,
-				5B532B8E178B056F0042DD49 /* Grand Object DispatchTests.octest */,
+				5B532B8E178B056F0042DD49 /* GOD Tests.octest */,
 				5BDE8BAD178D478E0003F610 /* Benchmarking */,
 			);
 			name = Products;
@@ -233,8 +233,8 @@
 			);
 			name = "GOD Tests";
 			productName = "Grand Object DispatchTests";
-			productReference = 5B532B8E178B056F0042DD49 /* Grand Object DispatchTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 5B532B8E178B056F0042DD49 /* GOD Tests.octest */;
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		5BDE8BAC178D478E0003F610 /* Benchmarking */ = {
 			isa = PBXNativeTarget;
@@ -259,7 +259,8 @@
 		5B532B75178B056E0042DD49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0600;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Martin Kiss";
 			};
 			buildConfigurationList = 5B532B78178B056E0042DD49 /* Build configuration list for PBXProject "Grand Object Dispatch" */;
@@ -472,7 +473,6 @@
 		5BDE8BB7178D478E0003F610 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -484,7 +484,6 @@
 		5BDE8BB8178D478E0003F610 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
