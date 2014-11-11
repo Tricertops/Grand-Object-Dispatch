@@ -1,4 +1,4 @@
-# Grand Object Dispatch
+# Grand Object Dispatch <a href="https://flattr.com/submit/auto?user_id=Tricertops&url=https%3A%2F%2Fgithub.com%2FiMartinKiss%2FGrand-Object-Dispatch" target="_blank"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 
 **Objective-C wrapper for Grand Central Dispatch** with method for every single dispatch call and with some useful additions.
 
